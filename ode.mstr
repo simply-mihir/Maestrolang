@@ -1,0 +1,21 @@
+Track "OdeToJoy" {
+    Tempo 120;
+    
+    Play E4(quarter); 
+    Play E4(quarter); 
+    Play F4(quarter); 
+    Play G4(quarter);
+    
+    Play G4(quarter); 
+    Play F4(quarter); 
+    Play E4(quarter); 
+    Play D4(quarter);
+    
+    Play C4(quarter); 
+    Play C4(quarter); 
+    Play D4(quarter); 
+    Play E4(quarter);
+    
+    Play E4(half); 
+    Play D4(half);
+}

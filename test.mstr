@@ -1,0 +1,22 @@
+Track "A Simple Melody" {
+    Tempo 120;
+    
+    Define Chorus {
+        Play C4(quarter);
+        Play E4(quarter);
+        Play G4(half);
+    }
+    
+    PlayMacro Chorus;
+    
+    Repeat 2 {
+        Chord [C4, E4, G4](half);
+        Play A4(eighth);
+        Play B4(eighth);
+        Play C5(quarter);
+    }
+    
+    PlayMacro Chorus;
+    
+    Chord [C4, F4, A4](whole);
+}

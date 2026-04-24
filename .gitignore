@@ -1,0 +1,12 @@
+# Ignore compiled binaries and C generated files
+maestro
+lex.yy.c
+parser.tab.c
+parser.tab.h
+
+# Ignore generated outputs
+generated_audio.py
+*.mid
+
+# Ignore Mac system files
+.DS_Store

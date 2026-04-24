@@ -1,0 +1,25 @@
+Track "PopSong" {
+    Tempo 90;
+
+    /* Define a reusable melody macro */
+    Define Hook {
+        Play C5(eighth);
+        Play D5(eighth);
+        Play E5(quarter);
+    }
+
+    /* Loop the chords and melody twice */
+    Repeat 2 {
+        Chord[C4, E4, G4](half);
+        PlayMacro Hook;
+
+        Chord[G3, B3, D4](half);
+        PlayMacro Hook;
+
+        Chord[A3, C4, E4](half);
+        PlayMacro Hook;
+
+        Chord [F3, A3, C4](half);
+        PlayMacro Hook;
+    }
+}

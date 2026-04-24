@@ -1,0 +1,25 @@
+Track "BossFight" {
+    Tempo 160;
+
+    Define Bassline {
+        Play A2(eighth); 
+        Play A2(eighth); 
+        Play E3(eighth); 
+        Play A2(eighth);
+        Play F3(eighth); 
+        Play A2(eighth); 
+        Play E3(eighth); 
+        Play D3(eighth);
+    }
+
+    /* Build the tension */
+    Repeat 4 {
+        PlayMacro Bassline;
+    }
+
+    /* Dramatic Chords */
+    Chord [A3, C4, E4](whole);
+    Chord[F3, A3, C4](whole);
+    Chord [D3, F3, A3](whole);
+    Chord[E3, G#3, B3](whole);
+}
