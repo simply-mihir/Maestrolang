@@ -2,7 +2,7 @@
 ***
 
 <div align="center">
-  <h1>🎵 MaestroLang</h1>
+  <h1> MaestroLang</h1>
   <p><b>An Algorithmic Music Compiler</b></p>
   
   <img src="https://img.shields.io/badge/Language-C%20%7C%20Python-orange?style=for-the-badge" alt="Language">
