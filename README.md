@@ -19,7 +19,7 @@ Unlike traditional toy compilers, MaestroLang utilizes **Source-to-Source Compil
 
 ---
 
-## 🌊 The Compilation Pipeline
+##  The Compilation Pipeline
 
 ```text
  ┌──────────────┐   Lexical   ┌──────────────┐   Syntax / SDT   ┌──────────────┐   music21    ┌──────────────┐
@@ -30,7 +30,7 @@ Unlike traditional toy compilers, MaestroLang utilizes **Source-to-Source Compil
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 1. [Key Features](#1-key-features)
 2. [Language Syntax](#2-language-syntax)
 3. [Quick Start (Docker / Cross-Platform)](#3-quick-start-docker--cross-platform)
