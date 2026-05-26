@@ -27,11 +27,11 @@
 <a href="#overview">Overview</a> •
 <a href="#architecture">Architecture</a> •
 <a href="#execution-flow">Execution Flow</a> •
-<a href="#language-syntax">Syntax</a> •
+<a href="#language-syntax">Language Syntax</a> •
 <a href="#tech-stack">Tech Stack</a> •
 <a href="#quick-start">Quick Start</a> •
 <a href="#local-build">Local Build</a> •
-<a href="#project-structure">Structure</a>
+<a href="#project-structure">Project Structure</a>
 </p>
 
 </div>
