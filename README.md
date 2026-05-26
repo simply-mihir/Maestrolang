@@ -2,14 +2,9 @@
 
 <h1>MaestroLang</h1>
 <h3>An Algorithmic Music Compiler</h3>
-
-<br/>
-
 <p align="center">
   <b>A fully custom Domain-Specific Language and compiler that transforms algorithmic music syntax into playable MIDI audio files.</b>
 </p>
-
-<br/>
 
 <!-- Core Stack Badges -->
 <p>
@@ -27,8 +22,6 @@
   <img src="https://img.shields.io/badge/Platforms-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey?style=for-the-badge" alt="Platforms"/>
   <img src="https://img.shields.io/badge/Output-MIDI%20Audio-FF6B6B?style=for-the-badge&logo=music&logoColor=white" alt="MIDI"/>
 </p>
-
-<br/>
 
 <p align="center">
   <a href="#-overview">Overview</a> •
