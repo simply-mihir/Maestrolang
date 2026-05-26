@@ -38,7 +38,7 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **MaestroLang** is a production-grade, custom-built **Domain-Specific Language (DSL) and compiler**, engineered entirely from scratch. It introduces a clean, C-style musical grammar and compiles it into fully playable **binary MIDI (`.mid`) audio files** — without writing a single note in a traditional DAW.
 
@@ -60,47 +60,55 @@ Rather than targeting machine code or assembly, MaestroLang employs **Source-to-
 
 ---
 
-## 🏛️ Architecture
+##  Architecture
 
 The compiler follows a strict **4-phase pipeline**. Each phase transforms the representation of the program before handing off to the next stage.
 
 ```mermaid
 graph TD
-    A["📄 Source File\n(.mstr)"] --> B
+    A["Source File (.mstr)"] --> PH1
 
-    subgraph Phase1["Phase 1 · Lexical Analysis  (lexer.l / Flex)"]
-        B["Character Stream\nReader"]
-        B --> C["Regex Pattern\nMatching"]
-        C --> D["Token Stream\n(Keywords, Pitches, Literals)"]
+    subgraph Phase1[" "]
+        PH1["Phase 1 - Lexical Analysis - lexer.l / Flex"]
+        PH1 --> B
+        B["Character Stream Reader"]
+        B --> C["Regex Pattern Matching"]
+        C --> D["Token Stream (Keywords, Pitches, Literals)"]
     end
 
-    D --> E
+    D --> PH2
 
-    subgraph Phase2["Phase 2 · Syntax Analysis  (parser.y / Bison)"]
-        E["LALR(1) Parser\n(Context-Free Grammar)"]
-        E --> F["Grammar Rule\nValidation"]
-        F --> G["Syntax Error\nDetection (yylineno)"]
+    subgraph Phase2[" "]
+        PH2["Phase 2 - Syntax Analysis - parser.y / Bison"]
+        PH2 --> E
+        E["LALR(1) Parser (Context-Free Grammar)"]
+        E --> F["Grammar Rule Validation"]
+        F --> G["Syntax Error Detection (yylineno)"]
     end
 
-    F --> H
+    F --> PH3
 
-    subgraph Phase3["Phase 3 · Semantic Analysis  (Embedded in Bison)"]
-        H["Symbol Table\nLookup / Insert"]
-        H --> I{"Identifier\nValid?"}
-        I -- "No" --> J["🔴 Semantic Error\n(Undeclared / Duplicate Macro)"]
-        I -- "Yes" --> K["Physics Bounds\nValidation (BPM ≤ 300)"]
+    subgraph Phase3[" "]
+        PH3["Phase 3 - Semantic Analysis - Embedded in Bison"]
+        PH3 --> H
+        H["Symbol Table Lookup / Insert"]
+        H --> I{"Identifier Valid?"}
+        I -- "No" --> J["Semantic Error - Undeclared / Duplicate Macro"]
+        I -- "Yes" --> K["Physics Bounds Validation (BPM 1-300)"]
     end
 
-    K --> L
+    K --> PH4
 
-    subgraph Phase4["Phase 4 · Code Generation & Transpilation"]
-        L["Syntax-Directed\nTranslation (SDT)"]
-        L --> M["Dynamic Indentation\nTracking (indent_level)"]
-        M --> N["📝 generated_audio.py\n(Python + music21)"]
-        N --> O["system() call\n→ python3 runtime"]
+    subgraph Phase4[" "]
+        PH4["Phase 4 - Code Generation and Transpilation"]
+        PH4 --> L
+        L["Syntax-Directed Translation (SDT)"]
+        L --> M["Dynamic Indentation Tracking (indent_level)"]
+        M --> N["generated_audio.py (Python + music21)"]
+        N --> O["system() call - python3 runtime"]
     end
 
-    O --> P["🎵 generated_audio.mid\n(Binary MIDI Output)"]
+    O --> P["generated_audio.mid (Binary MIDI Output)"]
 
     style Phase1 fill:#1a1a2e,stroke:#4f8ef7,color:#fff
     style Phase2 fill:#16213e,stroke:#f7a800,color:#fff
@@ -108,6 +116,10 @@ graph TD
     style Phase4 fill:#1a1a2e,stroke:#52e0a1,color:#fff
     style J fill:#e94560,stroke:#e94560,color:#fff
     style P fill:#52e0a1,stroke:#52e0a1,color:#000
+    style PH1 fill:#1a3a6e,stroke:#4f8ef7,color:#fff
+    style PH2 fill:#3a2e00,stroke:#f7a800,color:#fff
+    style PH3 fill:#3a0a1a,stroke:#e94560,color:#fff
+    style PH4 fill:#0a3a2a,stroke:#52e0a1,color:#fff
 ```
 
 ---
