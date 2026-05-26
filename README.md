@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1> MaestroLang</h1>
+<h1>MaestroLang</h1>
 <h3>An Algorithmic Music Compiler</h3>
 
 <br/>
