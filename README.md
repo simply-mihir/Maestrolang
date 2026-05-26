@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=F7A800&center=true&vCenter=true&width=600&lines=🎼+MaestroLang;An+Algorithmic+Music+Compiler" alt="Typing SVG" />
+<h1>🎼 MaestroLang</h1>
+<h3>An Algorithmic Music Compiler</h3>
 
 <br/>
 
@@ -254,13 +255,13 @@ Track "BossFight" {
       <br/><sub>Generated target code runtime</sub>
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gnu/gnu-original.svg" width="48" height="48" alt="GNU"/>
-      <br/><b>Flex</b>
+      <img src="https://img.shields.io/badge/Flex-Lexer-E34F26?style=for-the-badge&logoColor=white" height="32" alt="Flex"/>
+      <br/><br/><b>Flex</b>
       <br/><sub>Fast Lexical Analyzer — tokenization</sub>
     </td>
     <td align="center" width="120">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gnu/gnu-original.svg" width="48" height="48" alt="GNU"/>
-      <br/><b>GNU Bison</b>
+      <img src="https://img.shields.io/badge/GNU_Bison-LALR(1)_Parser-A42E2B?style=for-the-badge&logoColor=white" height="32" alt="GNU Bison"/>
+      <br/><br/><b>GNU Bison</b>
       <br/><sub>LALR(1) parser generator — grammar + SDT</sub>
     </td>
   </tr>
