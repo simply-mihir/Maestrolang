@@ -176,7 +176,7 @@ sequenceDiagram
 
 ---
 
-## 📝 Language Syntax
+##  Language Syntax
 
 MaestroLang uses a clean, C-style syntax specifically designed for algorithmic music composition. Source files use the `.mstr` extension.
 
@@ -243,7 +243,7 @@ Track "BossFight" {
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Core Compiler Infrastructure
 
@@ -282,12 +282,12 @@ Track "BossFight" {
       <br/><sub>Build automation via Makefile</sub>
     </td>
     <td align="center" width="120">
-      🎵
+      
       <br/><b>music21</b>
       <br/><sub>Python audio engine — MIDI generation</sub>
     </td>
     <td align="center" width="120">
-      🪟
+      
       <br/><b>WSL2</b>
       <br/><sub>Windows native execution environment</sub>
     </td>
@@ -314,7 +314,7 @@ Track "BossFight" {
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 > **Recommended:** Use Docker for a zero-dependency, cross-platform experience. No GCC, Flex, Bison, or Python required on your host machine.
 
@@ -370,7 +370,7 @@ docker run --rm `
 
 ---
 
-## 🔧 Local Build
+##  Local Build
 
 ### macOS / Linux
 
@@ -443,7 +443,7 @@ explorer.exe .
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 MaestroLang/
@@ -463,7 +463,7 @@ MaestroLang/
 
 ---
 
-## ⚙️ Compiler Internals Deep-Dive
+##  Compiler Internals Deep-Dive
 
 <details>
 <summary><b>Symbol Table Design</b></summary>
@@ -549,23 +549,7 @@ ENTRYPOINT ["/app/maestro"]
 
 ---
 
-## 🗺️ Roadmap
-
-| Status | Feature |
-|---|---|
-| ✅ | Core lexer, parser, semantic analysis |
-| ✅ | Loops (`Repeat`), Macros (`Define` / `PlayMacro`) |
-| ✅ | Polyphonic chords, dynamic durations |
-| ✅ | Docker cross-platform deployment |
-| 🔲 | Multi-track / multi-instrument support |
-| 🔲 | AST visualization (`--ast` debug flag) |
-| 🔲 | REPL / live interactive mode |
-| 🔲 | Export to MusicXML / LilyPond formats |
-| 🔲 | VSCode syntax highlighting extension |
-
----
-
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome.
 
@@ -580,7 +564,7 @@ Please open an issue first to discuss significant changes.
 
 ---
 
-## 📄 License
+##  License
 
 Distributed under the **MIT License**. See `LICENSE` for full details.
 
