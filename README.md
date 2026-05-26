@@ -124,21 +124,21 @@ graph TD
 
 ---
 
-## 🔄 Execution Flow
+##  Execution Flow
 
 End-to-end lifecycle from user keystroke to audio file — step by step.
 
 ```mermaid
 sequenceDiagram
     actor User
-    participant Shell as 🖥️ Shell / Terminal
-    participant C as ⚙️ C Binary (maestro)
-    participant Flex as 🔍 Flex Lexer
-    participant Bison as 🧠 Bison Parser
-    participant SymTable as 📋 Symbol Table
-    participant PyFile as 📄 generated_audio.py
-    participant Python as 🐍 Python Runtime
-    participant MIDI as 🎵 MIDI Output
+    participant Shell as  Shell / Terminal
+    participant C as  C Binary (maestro)
+    participant Flex as  Flex Lexer
+    participant Bison as  Bison Parser
+    participant SymTable as  Symbol Table
+    participant PyFile as  generated_audio.py
+    participant Python as  Python Runtime
+    participant MIDI as  MIDI Output
 
     User->>Shell: maestro song.mstr
     Shell->>C: Execute binary with file arg
@@ -152,11 +152,11 @@ sequenceDiagram
         Flex->>Bison: Return Token (keyword / pitch / literal)
         Bison->>Bison: Match CFG grammar rule
         alt Syntax Error
-            Bison-->>User: ❌ SyntaxError at line N
+            Bison-->>User:  SyntaxError at line N
         end
         Bison->>SymTable: Lookup / Insert identifier
         alt Semantic Error
-            SymTable-->>User: ❌ SemanticError (undeclared / duplicate)
+            SymTable-->>User:  SemanticError (undeclared / duplicate)
         end
         Bison->>PyFile: fprintf → emit Python line (SDT)
         Note over Bison,PyFile: indent_level tracks loop depth
@@ -170,7 +170,7 @@ sequenceDiagram
     Python->>Python: Calculate acoustic frequencies
     Python->>MIDI: Write binary data
 
-    MIDI-->>User: ✅ generated_audio.mid
+    MIDI-->>User:  generated_audio.mid
     C-->>Shell: Exit Code 0
 ```
 
