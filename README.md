@@ -24,20 +24,20 @@
 </p>
 
 <p align="center">
-  <a href="#-overview">Overview</a> •
-  <a href="#️-architecture">Architecture</a> •
-  <a href="#-execution-flow">Execution Flow</a> •
-  <a href="#-language-syntax">Syntax</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-local-build">Local Build</a> •
-  <a href="#-project-structure">Structure</a>
+<a href="#overview">Overview</a> •
+<a href="#architecture">Architecture</a> •
+<a href="#execution-flow">Execution Flow</a> •
+<a href="#language-syntax">Syntax</a> •
+<a href="#tech-stack">Tech Stack</a> •
+<a href="#quick-start">Quick Start</a> •
+<a href="#local-build">Local Build</a> •
+<a href="#project-structure">Structure</a>
 </p>
 
 </div>
 
 ---
-
+<a id="overview"></a>
 ##  Overview
 
 **MaestroLang** is a production-grade, custom-built **Domain-Specific Language (DSL) and compiler**, engineered entirely from scratch. It introduces a clean, C-style musical grammar and compiles it into fully playable **binary MIDI (`.mid`) audio files** — without writing a single note in a traditional DAW.
@@ -59,7 +59,7 @@ Rather than targeting machine code or assembly, MaestroLang employs **Source-to-
 | Cross-Platform | macOS, Linux, Windows (WSL2 + PowerShell) |
 
 ---
-
+<a id="architecture"></a>
 ##  Architecture
 
 The compiler follows a strict **4-phase pipeline**. Each phase transforms the representation of the program before handing off to the next stage.
@@ -123,7 +123,7 @@ graph TD
 ```
 
 ---
-
+<a id="execution-flow"></a>
 ##  Execution Flow
 
 End-to-end lifecycle from user keystroke to audio file — step by step.
@@ -175,7 +175,7 @@ sequenceDiagram
 ```
 
 ---
-
+<a id="language-syntax"></a>
 ##  Language Syntax
 
 MaestroLang uses a clean, C-style syntax specifically designed for algorithmic music composition. Source files use the `.mstr` extension.
@@ -242,7 +242,7 @@ Track "BossFight" {
 ```
 
 ---
-
+<a id="tech-stack"></a>
 ##  Tech Stack
 
 ### Core Compiler Infrastructure
@@ -313,7 +313,7 @@ Track "BossFight" {
 ```
 
 ---
-
+<a id="quick-start"></a>
 ##  Quick Start
 
 > **Recommended:** Use Docker for a zero-dependency, cross-platform experience. No GCC, Flex, Bison, or Python required on your host machine.
@@ -369,7 +369,7 @@ docker run --rm `
 **Output:** `generated_audio.mid` will appear in your current directory. Open it with any MIDI player, GarageBand, VLC, or import into a DAW.
 
 ---
-
+<a id="local-build"></a>
 ##  Local Build
 
 ### macOS / Linux
@@ -442,7 +442,7 @@ explorer.exe .
 ```
 
 ---
-
+<a id="project-structure"></a>
 ##  Project Structure
 
 ```
