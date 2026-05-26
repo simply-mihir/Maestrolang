@@ -567,7 +567,7 @@ Please open an issue first to discuss significant changes.
 
 ##  License
 
-Distributed under the **MIT License**. See `LICENSE` for full details.
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for full details.
 
 ---
 
