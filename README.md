@@ -31,7 +31,7 @@
 <a href="#tech-stack">Tech Stack</a> •
 <a href="#quick-start">Quick Start</a> •
 <a href="#local-build">Local Build</a> •
-<a href="#project-structure">Project Structure</a>
+<a href="#project-structure">Project Structure</a> •
   <a href="#compiler-internals">Compiler Internals</a>
 </p>
 
