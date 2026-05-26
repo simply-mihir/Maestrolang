@@ -282,12 +282,12 @@ Track "BossFight" {
       <br/><sub>Build automation via Makefile</sub>
     </td>
     <td align="center" width="120">
-      
+      🎵
       <br/><b>music21</b>
       <br/><sub>Python audio engine — MIDI generation</sub>
     </td>
     <td align="center" width="120">
-      
+      🪟
       <br/><b>WSL2</b>
       <br/><sub>Windows native execution environment</sub>
     </td>
@@ -574,14 +574,6 @@ Distributed under the **MIT License**. See `LICENSE` for full details.
 
 **MaestroLang** — where compiler theory meets music theory.
 
-<br/>
-
 <i>Built with passion for the intersection of Code and Sound.</i>
-
-<br/>
-
-<img src="https://img.shields.io/badge/Made%20with-C%20%2B%20Python-blueviolet?style=flat-square"/>
-<img src="https://img.shields.io/badge/Powered%20by-Flex%20%2B%20Bison-orange?style=flat-square"/>
-<img src="https://img.shields.io/badge/Delivers-MIDI%20Audio-brightgreen?style=flat-square"/>
 
 </div>
