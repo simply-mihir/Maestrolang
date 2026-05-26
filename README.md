@@ -23,19 +23,21 @@
   <img src="https://img.shields.io/badge/Output-MIDI%20Audio-FF6B6B?style=for-the-badge&logo=music&logoColor=white" alt="MIDI"/>
 </p>
 
-<p align="center">
-<a href="#overview">Overview</a> •
-<a href="#architecture">Architecture</a> •
-<a href="#execution-flow">Execution Flow</a> •
-<a href="#language-syntax">Language Syntax</a> •
-<a href="#tech-stack">Tech Stack</a> •
-<a href="#quick-start">Quick Start</a> •
-<a href="#local-build">Local Build</a> •
-<a href="#project-structure">Project Structure</a> •
-  <a href="#compiler-internals">Compiler Internals</a>
-</p>
-
 </div>
+
+---
+
+## Table of Contents
+
+1. [Overview](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#overview)
+2. [Architecture](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#architecture)
+3. [Execution Flow](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#execution-flow)
+4. [Language Syntax](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#language-syntax)
+5. [Tech Stack](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#tech-stack)
+6. [Quick Start](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#quick-start)
+7. [Local Build](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#local-build)
+8. [Project Structure](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#project-structure)
+9. [Compiler Internals](https://github.com/simply-mihir/Maestrolang/blob/main/README.md#compiler-internals)
 
 ---
 <a id="overview"></a>
