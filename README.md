@@ -303,7 +303,7 @@ Track "BossFight" {
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                        MaestroLang Compiler Stack                           │
 ├─────────────────┬───────────────────────────────────────────────────────────┤
-│ PHASE           │ TECHNOLOGY                                                 │
+│ PHASE           │ TECHNOLOGY                                                │
 ├─────────────────┼───────────────────────────────────────────────────────────┤
 │ Lexical         │ Flex  →  Regex tokenization of .mstr source               │
 │ Syntactic       │ GNU Bison  →  LALR(1) Context-Free Grammar enforcement    │
