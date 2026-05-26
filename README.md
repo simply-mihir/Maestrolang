@@ -32,6 +32,7 @@
 <a href="#quick-start">Quick Start</a> •
 <a href="#local-build">Local Build</a> •
 <a href="#project-structure">Project Structure</a>
+  <a href="#compiler-internals">Compiler Internals</a>
 </p>
 
 </div>
@@ -462,7 +463,7 @@ MaestroLang/
 ```
 
 ---
-
+<a id="compiler-internals"></a>
 ##  Compiler Internals Deep-Dive
 
 <details>
